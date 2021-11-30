@@ -67,10 +67,11 @@ header a {
     position: relative;
     display: inline-block;
     margin-left: auto;
+    cursor: pointer;
 }
 
 .dropdown {
-    display: none;
+    /* display: none; */
     position: absolute;
     background-color: var(--main-dark-grey);
     min-width: 160px;
@@ -81,9 +82,13 @@ header a {
     right: -30px;
 }
 
-.menu:hover .dropdown {
-    display: block;
+.hide {
+    display: none;
 }
+
+/*.menu:hover .dropdown {
+    display: block;
+}*/
 
 .dropdown li {
     list-style: none;
@@ -109,6 +114,16 @@ main {
 
 main img {
     height: 150px;
+}
+
+/*Barra de cart*/
+.cart {
+    position: sticky;
+    top: 0;
+    background-color: var(--main-dark-grey);
+    margin: 5px -10px;
+    z-index: 50;
+    padding: 4%;
 }
 
 /* product */
@@ -165,6 +180,12 @@ main img {
     top: 6%;
     right: 9%;
     font-size: 1.5em;
+    color:#fffcf2;
+    cursor: pointer;
+}
+
+.imgContainer .heart.clicked{
+    color: red;
 }
 
 .product button,
@@ -178,6 +199,11 @@ main img {
     padding: 4% 15%;
     font-size: 1em;
     font-weight: 800;
+    color: var(--main-light-grey);
+}
+
+.product button::before{
+    content: "Compra ya! $";
 }
 
 .product button {
