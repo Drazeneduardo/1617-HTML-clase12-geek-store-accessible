@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Organizador</title>
+</head>
+
+<body>
+    <header>
+        <h1>Organizador de Tareas!</h1>
+    </header>
+
+    <main class="container">
+        <section class="inputSection">
+            <form action="" id="newTask">
+                <h2>Nueva Tarea</h2>
+                <input type="text" id="newTaskInput" placeholder="agregá una tarea" />
+                <button id="newTaskButton" class="add">
+                    <!--Esta i va a volar-->
+                    <i class="fas fa-plus-circle"></i>
+                </button>
+            </form>
+            <!--Esta va a estar oculta-->
+            <div class="emptyAlert hidden" id="emptyTask">La tarea no puede estar vacía!</div>
+
+        </section>
+
+        <section class="taskSection">
+            <h2>Cosas por hacer</h2>
+            <!--esto eventualmente se va a llenar solo por js-->
+            <div id="tasks">
+                <div class="container" id="container">
+                    <input type="text" class="taskInput" value="mock task" readonly>
+                    <button class="edit">
+                        <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="scrap">
+                        <i class="fas fa-strikethrough"></i>
+                    </button>
+                    <button class="erase">
+                        <i class="fas fa-eraser"></i>
+                    </button>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

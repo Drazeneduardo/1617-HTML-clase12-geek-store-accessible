@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Permanent+Marker&display=swap");
+//vamos a hacer algo distinto. Vamos a usar fontAwesome como font así cuando apendeamos en js no tenemos que apendear los i también
+@font-face {
+  font-family: fontAwesome;
+  src: url("./assets/fonts/fontawesome-free-5.15.4-web/webfonts/fa-solid-900.ttf");
+}
+
+
+
+//palette
+$dark-blue: #8cb6a6;
+$dark-blue-transparent: rgba(0, 109, 119, 0.068);
+$light-blue: #c0dcf4;
+$light: #f9f3ed;
+$light-pink: #ffa2b2;
+$dark-pink: #ce6979;
+//resets
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Outfit", sans-serif;
+    padding: 2%;
+    height: 100vh;
+    background-image: url(./assets/background.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+h1,h2{
+    font-family: "Permanent Marker", cursive;
+}
+
+h1{
+    font-size: 2.5em;
+}
+
+//body
+main{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    margin: 4%;
+    padding: 3% 4%;
+    //icons
+    button{
+        background-color: $dark-pink;
+        border: $dark-pink 2px solid;
+        color: $light;
+        padding: 10px;
+        border-radius: 5px;
+        margin-right: 1%;
+        &:hover {
+            cursor: pointer;
+            background-color: $light-pink;
+        }
+    }
+}

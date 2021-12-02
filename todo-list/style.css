@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300&family=Permanent+Marker&display=swap");
+@font-face {
+  font-family: fontAwesome;
+  src: url("./assets/fonts/fontawesome-free-5.15.4-web/webfonts/fa-solid-900.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  padding: 2%;
+  height: 100vh;
+  background-image: url(./assets/background.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+h1, h2 {
+  font-family: "Permanent Marker", cursive;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+main {
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 4%;
+  padding: 3% 4%;
+}
+
+main button {
+  background-color: #ce6979;
+  border: #ce6979 2px solid;
+  color: #f9f3ed;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 1%;
+}
+
+main button:hover {
+  cursor: pointer;
+  background-color: #ffa2b2;
+}
+/*# sourceMappingURL=style.css.map */
