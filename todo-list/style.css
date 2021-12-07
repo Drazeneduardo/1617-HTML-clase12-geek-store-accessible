@@ -52,4 +52,83 @@ main button:hover {
   cursor: pointer;
   background-color: #ffa2b2;
 }
+
+main button.add::before {
+  font-family: "fontAwesome";
+  content: "\f055";
+}
+
+main button.edit::before {
+  font-family: "fontAwesome";
+  content: "\f044";
+}
+
+main button.scrap::before {
+  font-family: "fontAwesome";
+  content: "\f058";
+}
+
+main button.erase::before {
+  font-family: "fontAwesome";
+  content: "\f12d";
+}
+
+main button.save::before {
+  font-family: "fontAwesome";
+  content: "\f0c7";
+}
+
+main input {
+  width: 60%;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: #f9f3ed;
+  border: #8cb6a6 2px solid;
+  margin-bottom: 1%;
+}
+
+main .emptyAlert {
+  padding: 2%;
+}
+
+main .hidden {
+  visibility: hidden;
+}
+
+main .taskSection {
+  margin-top: 5%;
+}
+
+main .taskSection .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+main .taskSection .taskInput {
+  color: grey;
+  cursor: auto;
+}
+
+main .taskSection .taskInput:not(:-moz-read-only) {
+  cursor: text;
+  color: #8cb6a6;
+  font-weight: 800;
+}
+
+main .taskSection .taskInput:not(:read-only) {
+  cursor: text;
+  color: #8cb6a6;
+  font-weight: 800;
+}
+
+main .taskSection .taskInput.done {
+  text-decoration: line-through;
+}
+
+main .taskSection .btns {
+  width: 30%;
+}
 /*# sourceMappingURL=style.css.map */

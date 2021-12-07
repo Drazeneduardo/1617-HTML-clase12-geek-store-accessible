@@ -56,5 +56,71 @@ main{
             cursor: pointer;
             background-color: $light-pink;
         }
+        // de donde sacamos el unicode
+//*https://fontawesome.com/v5.15/icons/eraser?style=solid
+        &.add::before{
+            font-family: "fontAwesome";
+            content: "\f055";
+        }
+        &.edit::before{
+            font-family: "fontAwesome";
+            content: "\f044";
+        }
+        &.scrap::before{
+            font-family: "fontAwesome";
+            content: "\f058";
+        }
+        &.erase::before{
+            font-family: "fontAwesome";
+            content: "\f12d";
+        }
+        &.save::before{
+            font-family: "fontAwesome";
+            content: "\f0c7";
+        }
+
     }
+    input {
+        width: 60%;
+        padding: 10px;
+        border-radius: 5px;
+        margin-right: 10px;
+        background-color: $light;
+        border: $dark-blue 2px solid; 
+        margin-bottom: 1%;
+    }
+    .emptyAlert{
+        padding: 2%;
+    }
+    //hidding class:
+    .hidden{
+        visibility: hidden;
+    }
+    //task creator:
+    .taskSection{
+        margin-top: 5%;
+        //task
+        .container{
+            display: flex;
+            width: 100%;
+        }
+        .taskInput{
+            color: grey;
+            cursor: auto;
+            &:not(:read-only){
+        cursor: text;
+        color: $dark-blue;
+        font-weight: 800;}
+        &.done{
+            text-decoration: line-through;
+        }
+        }
+        .btns{
+            width: 30%;
+        }
+        
+    }
+
+
 }
+
