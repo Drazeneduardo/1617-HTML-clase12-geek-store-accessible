@@ -78,6 +78,11 @@ main button.save::before {
   content: "\f0c7";
 }
 
+main button.notDone::before {
+  font-family: "fontAwesome";
+  content: "\f057";
+}
+
 main input {
   width: 60%;
   padding: 10px;

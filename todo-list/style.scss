@@ -78,6 +78,11 @@ main{
             font-family: "fontAwesome";
             content: "\f0c7";
         }
+        &.notDone::before {
+            font-family: "fontAwesome";
+            content: "\f057";
+        }
+
 
     }
     input {
